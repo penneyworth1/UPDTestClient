@@ -15,7 +15,8 @@ namespace UDPTestClient
         {
             byte[] data = new byte[1024];
             string input, stringData;
-            IPEndPoint ipep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 58642);
+            IPEndPoint ipep = new IPEndPoint(IPAddress.Parse("38.98.173.2"), 58642);
+            //IPEndPoint ipep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 58642);
             Socket server = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
             string welcome = "Hello, are you there?";
             data = Encoding.ASCII.GetBytes(welcome);
